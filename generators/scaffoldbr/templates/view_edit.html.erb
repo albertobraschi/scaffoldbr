@@ -1,0 +1,6 @@
+<h1>Alerando <%= singular_name.humanize %></h1>
+
+<%%= render :partial => 'form', :locals => {:botao => 'Alterar'} %>
+
+<%%= link_to 'Mostrar', @<%= singular_name %>, :class => 'bt_detal' %> |
+<%%= link_to 'Voltar', <%= plural_name %>_path, :class => 'bt_back' %>

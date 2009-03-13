@@ -1,0 +1,5 @@
+<h1>Novo <%= singular_name.humanize %></h1>
+
+<%%= render :partial => 'form', :locals => {:botao => 'Criar'} %>
+
+<%%= link_to 'Voltar', <%= plural_name %>_path, :class => 'bt_back' %>

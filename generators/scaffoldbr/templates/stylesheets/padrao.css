@@ -1,0 +1,48 @@
+@import 'tabela.css';
+@import 'botoes.css';
+@import 'erro.css';
+@import 'menu.css';
+@import 'paginacao.css';
+
+body { background-color: #fff; color: #333; }
+
+body, p, ol, ul, td {
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size:   13px;
+	line-height: 18px;
+}
+
+pre {
+	background-color: #eee;
+	padding: 10px;
+	font-size: 11px;
+}
+
+a { color: #000; }
+a:visited { color: #666; }
+a:hover { color: #fff; background-color:#000; }
+
+#tudo {
+	border: #000 1px solid;
+	margin: auto;
+	padding: 0px;
+}
+
+#cabecalho {
+	background: #CCC;
+	font-size: 18px;
+	padding: 30px;
+}
+
+#conteudo {
+	clear: both;
+	font-size: 12px;
+	padding: 5px;
+}
+
+#rodape {
+	clear: both;
+	background: #000;
+	color: #FFF;
+	padding: 5px;
+}

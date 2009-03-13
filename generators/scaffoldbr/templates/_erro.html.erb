@@ -1,0 +1,5 @@
+<% %w[ notice error alert ].each do |msg| %>
+<%% unless flash[:<%= msg %>].blank? %>
+	<div class="notice"><%%= flash[:<%= msg %>] %></div>
+<%% end -%>
+<% end %>

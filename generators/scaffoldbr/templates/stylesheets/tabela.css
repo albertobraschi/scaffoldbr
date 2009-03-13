@@ -1,0 +1,38 @@
+table {
+border-collapse: collapse;
+border-spacing: 1px;
+border: 1px solid #a4c0e2;
+width: 98%;
+margin: 0 0 10px 10px;
+}
+
+td, th {
+padding:6px 6px;
+border-bottom:solid 1px #a4c0e2;
+vertical-align:top;
+}
+
+table caption{
+background: #efefef;
+color: #333;
+text-align: center;
+font-size: 1.2em;
+line-height:3em;
+}
+
+thead th {
+background: #eee;
+border-bottom:solid 1px #a4c0e2;
+border-top:solid 1px #a4c0e2;
+text-align:left;
+}
+
+tfoot td, tfoot th{
+background: #eee;
+border-bottom:solid 1px #a4c0e2;
+border-top:solid 1px #ccc;
+}
+
+tr.odd td, tr.odd th {
+background:#edf3fe;
+}

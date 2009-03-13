@@ -1,0 +1,37 @@
+#menu {
+	background: #000;
+	height: 27px;
+	margin: 0; padding: 0;
+}
+
+
+#menu ul {
+	margin: 0; padding: 0;
+	margin-left: 6px;
+}
+
+
+#menu ul li {
+	display: inline;
+}
+
+
+#menu ul li a {
+	background: #444;
+	color: #FFF;
+	border: 1px #FFF solid;
+	border-bottom: 1px #000 solid;
+	float: left;
+	padding: 5px 7px;
+	margin: 2px;
+	text-decoration: none;
+}
+
+
+#menu ul li a:hover {
+	background: #FFF;
+	color: #F00;
+	border: #F00 1px solid;
+	border-bottom: none;
+	text-decoration: none;
+}

@@ -1,0 +1,123 @@
+/*Botões*/
+.bt_money {
+	margin:0 2px;
+	padding: 5px 2px 3px 23px;
+	background-image: url("/images/button_money.gif");
+	background-position: 0px center;
+	background-repeat: no-repeat;
+}
+
+.bt_cancel {
+	margin:0 2px;
+	padding: 5px 2px 3px 23px;
+	background-image: url("/images/button_no.gif");
+	background-position: 0px center;
+	background-repeat: no-repeat;
+}
+
+.bt_detal {
+	margin:0 2px;
+	padding: 5px 2px 3px 23px;
+	background-image: url("/images/button_view.gif");
+	background-position: 0px center;
+	background-repeat: no-repeat;
+}
+
+.bt_ok {
+	margin:0 2px;
+	padding: 5px 2px 3px 23px;
+	background-image: url("/images/button_ok2.gif");
+	background-position: 0px center;
+	background-repeat: no-repeat;
+}
+
+.bt_delete {
+	margin:0 2px;
+	padding: 5px 2px 3px 23px;
+	background-image: url("/images/button_delete.gif");
+	background-position: 0px center;
+	background-repeat: no-repeat;
+}
+
+.bt_edit {
+	margin:0 2px;
+	padding: 5px 2px 3px 23px;
+	background-image: url("/images/button_edit.gif");
+	background-position: 0px center;
+	background-repeat: no-repeat;
+}
+
+.bt_photo {
+	margin:0 2px;
+	padding: 5px 2px 3px 23px;
+	background-image: url("/images/button_photo.gif");
+	background-position: 0px center;
+	background-repeat: no-repeat;
+}
+
+.bt_music {
+	margin:0 2px;
+	padding: 5px 2px 3px 23px;
+	background-image: url("/images/button_music.gif");
+	background-position: 0px center;
+	background-repeat: no-repeat;
+}
+
+.bt_video {
+	margin:0 2px;
+	padding: 5px 2px 3px 23px;
+	background-image: url("/images/button_video.gif");
+	background-position: 0px center;
+	background-repeat: no-repeat;
+}
+
+.bt_save {
+	margin:0 2px;
+	padding: 5px 2px 3px 23px;
+	border: 1px solid #249910;
+	color: green;
+	background-image: url("/images/button_save.gif");
+	background-position: 0px center;
+	background-repeat: no-repeat;
+}
+
+
+.bt_back {
+	margin:0 2px;
+	padding: 5px 2px 3px 23px;
+	background-image: url("/images/button_back.gif");
+	background-position: 0px center;
+	background-repeat: no-repeat;
+}
+
+.bt_user {
+	margin:0 2px;
+	padding: 5px 2px 3px 23px;
+	background-image: url("/images/button_user.gif");
+	background-position: 0px center;
+	background-repeat: no-repeat;
+}
+
+.bt_user {
+	margin:0 2px;
+	padding: 5px 2px 3px 23px;
+	background-image: url("/images/button_pass.gif");
+	background-position: 0px center;
+	background-repeat: no-repeat;
+}
+
+.bt_print {
+	margin:0 2px;
+	padding: 5px 2px 3px 23px;
+	background-image: url("/images/button_print.gif");
+	background-position: 0px center;
+	background-repeat: no-repeat;
+}
+
+.bt_escolha {
+	margin:0 2px;
+	padding: 5px 2px 3px 23px;
+	background-image: url('/images/button_escolha.gif');
+	background-position: 0px center;
+	background-repeat: no-repeat;
+}
