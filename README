@@ -1,13 +1,15 @@
 Scaffoldbr
 ==========
 
-Introduction goes here.
+Scaffold generator para Brasileiros.
 
 
-Example
+Exemplo
 =======
 
-Example goes here.
+./script/generate scaffoldbr NomeDoModel
+./script/generate scaffoldbr NomeDoModel campo:tipo campo:tipo
+./script/generate scaffoldbr NomeDoModel nome:string nascimento:date
 
 
-Copyright (c) 2009 [name of plugin creator], released under the MIT license
+Copyright (c) 2009 [Kivanio Barbosa], released under the MIT license
