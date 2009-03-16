@@ -20,7 +20,7 @@
 <tbody>
   <tr>
 <% for attribute in attributes -%>
-    <td><%%=h <%= singular_name %>.<%= attribute.name %> %></td>
+    <td><%%=h <%= singular_name %>.<%= attribute.name %> unless <%= singular_name %>.<%= attribute.name %>.blank? %></td>
 <% end -%>
     <td><%%= link_to 'Mostrar', <%= singular_name %>, :class => 'bt_detal' %></td>
     <td><%%= link_to 'Alterar', edit_<%= singular_name %>_path(<%= singular_name %>), :class => 'bt_edit' %></td>

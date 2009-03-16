@@ -3,7 +3,7 @@
 <% for attribute in attributes -%>
 <p>
   <b><%= attribute.column.human_name %>:</b>
-  <%%=h @<%= singular_name %>.<%= attribute.name %> %>
+  <%%=h @<%= singular_name %>.<%= attribute.name %> unless @<%= singular_name %>.<%= attribute.name %>.blank? %>
 </p>
 
 <% end -%>
