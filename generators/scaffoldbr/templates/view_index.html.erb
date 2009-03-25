@@ -16,8 +16,8 @@
 <th></th>
   </tr>
 </thead>
-<%% @<%= plural_name %>.each do |<%= singular_name %>| %>
 <tbody>
+<%% @<%= plural_name %>.each do |<%= singular_name %>| %>
   <tr>
 <% for attribute in attributes -%>
     <td><%%=h <%= singular_name %>.<%= attribute.name %> unless <%= singular_name %>.<%= attribute.name %>.blank? %></td>
@@ -26,8 +26,8 @@
     <td><%%= link_to 'Alterar', edit_<%= singular_name %>_path(<%= singular_name %>), :class => 'bt_edit' %></td>
     <td><%%= link_to 'Apagar', <%= singular_name %>, :confirm => 'Você tem certeza?', :method => :delete, :class => 'bt_delete' %></td>
   </tr>
-</tbody>
 <%% end %>
+</tbody>
 </table>
 <%%= page_entries_info @<%= plural_name %>, :entry_name => '<%= plural_name.humanize %>' %>
 <br />
