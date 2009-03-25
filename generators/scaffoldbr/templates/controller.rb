@@ -1,6 +1,6 @@
 class <%= controller_class_name %>Controller < ApplicationController
   
-  before_filter :find_<%= file_name %>, :only => [:new, :create, :edit, :update]
+  before_filter :find_<%= file_name %>, :only => [:edit, :update, :show, :destroy]
   # GET /<%= table_name %>
   <% if options[:with_xml] %>
   # GET /<%= table_name %>.xml
