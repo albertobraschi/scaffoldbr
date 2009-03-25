@@ -1,13 +1,13 @@
 class <%= controller_class_name %>Controller < ApplicationController
   
-  before_filter :find_<%= file_name %>, :except => [:index, :new, :create]
+  before_filter :find_<%= file_name %>, :except => [:new, :create, :edit, :update]
   # GET /<%= table_name %>
-  <% unless options[:without_xml] %>
+  <% if options[:with_xml] %>
   # GET /<%= table_name %>.xml
   <% end %>
   def index
     @<%= file_name.pluralize %> = <%= class_name %>.paginate :page => params[:page], :per_page => 50
- <% unless options[:without_xml] %>
+ <% if options[:with_xml] %>
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @<%= table_name %> } 
@@ -16,11 +16,11 @@ class <%= controller_class_name %>Controller < ApplicationController
   end
 
   # GET /<%= table_name %>/1
-  <% unless options[:without_xml] %>
+  <% if options[:with_xml] %>
   # GET /<%= table_name %>/1.xml
   <% end %>
   def show
-<% unless options[:without_xml] %>
+<% if options[:with_xml] %>
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @<%= file_name %> }
@@ -29,12 +29,12 @@ class <%= controller_class_name %>Controller < ApplicationController
   end
 
   # GET /<%= table_name %>/new
-  <% unless options[:without_xml] %>
+  <% if options[:with_xml] %>
   # GET /<%= table_name %>/new.xml
   <% end %>
   def new
     @<%= file_name %> = <%= class_name %>.new
-<% unless options[:without_xml] %>
+<% if options[:with_xml] %>
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @<%= file_name %> }
@@ -47,12 +47,12 @@ class <%= controller_class_name %>Controller < ApplicationController
   end
 
   # POST /<%= table_name %>
-  <% unless options[:without_xml] %>
+  <% if options[:with_xml] %>
   # POST /<%= table_name %>.xml
   <% end %>
   def create
     @<%= file_name %> = <%= class_name %>.new(params[:<%= file_name %>])
-<% unless options[:without_xml] %>
+<% if options[:with_xml] %>
     respond_to do |format|
       if @<%= file_name %>.save
         flash[:notice] = '<%= class_name.humanize %> criada com sucesso.'
@@ -75,11 +75,11 @@ class <%= controller_class_name %>Controller < ApplicationController
   end
 
   # PUT /<%= table_name %>/1
-  <% unless options[:without_xml] %>
+  <% if options[:with_xml] %>
   # PUT /<%= table_name %>/1.xml
   <% end %>
   def update
-<% unless options[:without_xml] %>
+<% if options[:with_xml] %>
     respond_to do |format|
       if @<%= file_name %>.update_attributes(params[:<%= file_name %>])
         flash[:notice] = '<%= class_name.humanize %> atualizada com sucesso.'
@@ -101,11 +101,11 @@ class <%= controller_class_name %>Controller < ApplicationController
   end
 
   # DELETE /<%= table_name %>/1
-  <% unless options[:without_xml] %>
+  <% if options[:with_xml] %>
   # DELETE /<%= table_name %>/1.xml
   <% end %>
   def destroy
-    <% unless options[:without_xml] %>
+    <% if options[:with_xml] %>
     if @<%= file_name %>.destroy
     respond_to do |format|
       flash[:notice] = '<%= class_name.humanize %> apagada com sucesso.'

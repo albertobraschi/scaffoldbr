@@ -1,5 +1,5 @@
 class ScaffoldbrGenerator < Rails::Generator::NamedBase
-  default_options :skip_timestamps => false, :skip_migration => false, :force_plural => false, :without_xml => false
+  default_options :skip_timestamps => false, :skip_migration => false, :force_plural => false, :with_xml => false
 
   attr_reader   :controller_name,
   :controller_class_path,
@@ -84,8 +84,8 @@ class ScaffoldbrGenerator < Rails::Generator::NamedBase
     "Não gera o arquivo de migration para este model") { |v| options[:skip_migration] = v }
     opt.on("--force-plural",
     "Força a pluralização do nome do model") { |v| options[:force_plural] = v }
-    opt.on("--without-xml",
-    "Não gera saída xml no controller") { |v| options[:without_xml] = v }
+    opt.on("--with-xml",
+    "Gera respond_to com formato xml no controller") { |v| options[:with_xml] = v }
   end
 
   def create_scaffold_views(m)
